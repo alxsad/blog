@@ -1,0 +1,8 @@
+/vendor/
+/bin/*
+!/bin/console
+.DS_Store
+.idea
+._.DS_Store
+Thumbs.db
+.AppleDouble

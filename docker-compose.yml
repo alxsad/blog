@@ -1,5 +1,5 @@
 nginx:
-  build: ./nginx/
+  build: ./containers/nginx/
   ports:
     - 80:80
   links:
@@ -8,14 +8,24 @@ nginx:
     - app
 
 php:
-  build: ./php/
+  build: ./containers/php/
   expose:
     - 9000
   volumes_from:
     - app
 
 app:
-    image: php:7-fpm
-    volumes:
-        - .:/var/www/html
-    command: "true"
+  image: php:7-fpm
+  volumes:
+    - .:/var/www
+  command: "true"
+
+composer:
+  image: composer/composer
+  volumes:
+    - .:/app
+
+phpunit:
+  image: phpunit/phpunit
+  volumes:
+   - .:/app

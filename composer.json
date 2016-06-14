@@ -18,7 +18,11 @@
         "monolog/monolog": "^1.19",
         "vlucas/phpdotenv": "^2.2",
         "mathiasverraes/money": "^1.3",
-        "twig/twig": "^1.24"
+        "twig/twig": "^1.24",
+        "lstrojny/functional-php": "^1.2",
+        "nikic/iter": "^1.3",
+        "zendframework/zend-diactoros": "^1.3",
+        "doctrine/annotations": "^1.2"
     },
     "require-dev": {
         "phpspec/phpspec": "^2.5",

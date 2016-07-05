@@ -19,13 +19,3 @@ app:
   volumes:
     - .:/var/www
   command: "true"
-
-composer:
-  image: composer/composer
-  volumes:
-    - .:/app
-
-phpunit:
-  image: phpunit/phpunit
-  volumes:
-   - .:/app

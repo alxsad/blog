@@ -1,0 +1,6 @@
+suites:
+  formatter.name: pretty
+  main_suite:
+    namespace: Alxsad
+    psr4_prefix: Alxsad
+    spec_path: tests/spec

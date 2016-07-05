@@ -4,6 +4,7 @@ namespace Alxsad\App\Controller;
 use Psr\Http\Message\ResponseInterface as Response;
 use Psr\Http\Message\ServerRequestInterface as Request;
 use Alxsad\Domain\Repository\PostRepository;
+use DI\Annotation\Inject;
 
 class PostController
 {

@@ -7,6 +7,7 @@ class Post
 {
     private $id;
     private $name;
+    private $comments;
 
     function __construct(string $name)
     {

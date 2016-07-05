@@ -1,7 +1,7 @@
 <?php
 namespace Alxsad\Domain\Repository;
 
-use Alxsad\Domain\Post;
+use Alxsad\Domain\Entity\Post;
 
 interface PostRepository
 {

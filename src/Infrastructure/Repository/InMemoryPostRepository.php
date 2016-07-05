@@ -1,11 +1,11 @@
 <?php
 namespace Alxsad\Infrastructure\Repository;
 
-use Alxsad\Domain\Post;
+use Alxsad\Domain\Entity\Post;
 use Alxsad\Domain\Repository\PostRepository;
 use Functional as f;
 
-class PostRepository implements PostRepository
+class InMemoryPostRepository implements PostRepository
 {
     private $posts;
 
@@ -24,7 +24,7 @@ class PostRepository implements PostRepository
 
     public function get(string $id): Post
     {
-        $post = f\first($this->posts, function (Post $post) use (string $id) {
+        $post = f\first($this->posts, function (Post $post) use ($id) {
             return $post->getId() == $id;
         });
         if ($post instanceof Post) {
